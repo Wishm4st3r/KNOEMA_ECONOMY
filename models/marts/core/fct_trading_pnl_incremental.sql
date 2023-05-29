@@ -26,6 +26,7 @@ joined as (
         daily_positions.volume,
         daily_positions.cost, 
         daily_positions.cost_per_share,
+        'useless_column' useless_column,
         daily_positions.currency,
         sum(cost) over(
                 partition by 
